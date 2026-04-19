@@ -145,4 +145,47 @@ footer {
 </footer>
 
 </body>
-</html>
+</html><section class="section">
+    <h2>Contact Me</h2>
+
+    <form action="https://formspree.io/f/YOUR_ID" method="POST" class="contact-form">
+        
+        <input type="text" name="name" placeholder="Your Name" required>
+        
+        <input type="email" name="email" placeholder="Your Email" required>
+        
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        
+        <button type="submit">Send Message</button>
+
+    </form>
+</section>
+
+<style>
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+</style>
